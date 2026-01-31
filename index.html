@@ -8,31 +8,47 @@
 </head>
 <body>
     <h1>TodoList</h1>
-    <form action="">
-        <div>
-            <label for="">日付</label>
-            <input type="datetime-local">
-        </div>
-        <div>
-            <label for="">What's Todo</label>
-            <input type="text" placeholder="Todoを入力しろ">
-        </div>
-        <div>
-            <label for="">場所</label>
-            <input type="text" placeholder="どこで">
-        </div>
-        <div>
-            <label for="">締め切り</label>
-            <input type="datetime-local">
-        </div>
-        <div>
-            <label for="">リセット</label>
-            <input type="reset" value="ポチ">
-        </div>
-        <div>
-            <input type="submit" value="追加!">
-        </div>
-    </form>
+    <div class="ft-flex">
+        <form action="">
+            <div>
+                <label for="">日付</label>
+                <input type="datetime-local">
+            </div>
+            <div>
+                <label for="">What's Todo</label>
+                <input type="text" placeholder="Todoを入力しろ">
+            </div>
+            <div>
+                <label for="">場所</label>
+                <input type="text" placeholder="どこで">
+            </div>
+            <div>
+                <label for="">締め切り</label>
+                <input type="datetime-local">
+            </div>
+            <div>
+                <label for="">リセット</label>
+                <input type="reset" value="ポチ">
+            </div>
+            <div>
+                <input type="submit" value="追加!">
+            </div>
+        </form>
+        <table>
+            <tr>
+                <th>日付</th>
+                <th>Todo</th>
+                <th>場所</th>
+                <th>締め切り</th>
+            </tr>
+            <tr>
+                <td>サンプル</td>
+                <td>サンプル</td>
+                <td>サンプル</td>
+                <td>サンプル</td>
+            </tr>
+        </table>
+    </div>
 <script src="./script.js"></script>
 </body>
 </html>
