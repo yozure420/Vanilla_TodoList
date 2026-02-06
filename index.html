@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+
+    <script defer src="./script.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <h1>TodoList</h1>
     <div class="ft-flex">
-        <form action="">
             <div>
                 <label for="">日付</label>
-                <input type="datetime-local">
+                <input type="datetime-local" id="date">
             </div>
             <div>
                 <label for="">What's Todo</label>
-                <input type="text" placeholder="Todoを入力しろ">
+                <input type="text" placeholder="Todoを入力しろ" id="todo">
             </div>
             <div>
                 <label for="">場所</label>
-                <input type="text" placeholder="どこで">
+                <input type="text" placeholder="どこで" id="place">
             </div>
             <div>
                 <label for="">締め切り</label>
-                <input type="datetime-local">
+                <input type="datetime-local" id="line">
             </div>
             <div>
                 <label for="">リセット</label>
                 <input type="reset" value="ポチ">
             </div>
             <div>
-                <input type="submit" value="追加!">
+                <button id="btn">追加！</button>
             </div>
-        </form>
-        <table>
-            <tr>
-                <th>日付</th>
-                <th>Todo</th>
-                <th>場所</th>
-                <th>締め切り</th>
-            </tr>
-            <tr>
-                <td>サンプル</td>
-                <td>サンプル</td>
-                <td>サンプル</td>
-                <td>サンプル</td>
-            </tr>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>日付</th>
+                    <th>Todo</th>
+                    <th>場所</th>
+                    <th>締め切り</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
         </table>
     </div>
-<script src="./script.js"></script>
 </body>
 </html>
